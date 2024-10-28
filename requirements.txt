@@ -1,1 +1,2 @@
-supar @ git+https://github.com/yzhangcs/parser@bebdd35
+supar @ git+https://github.com/Wolfingten/parser
+wandb==0.18.5
