@@ -1,0 +1,42 @@
+[2024-10-28 03:12:34 INFO] 
+amp: false
+bert: xlm-roberta-large
+bert_pooling: mean
+binarize: false
+buckets: 32
+build: true
+cache: false
+checkpoint: false
+clip: 5.0
+dev: /home/wolfingten/projects/data/spmrl/GERMAN_SPMRL/gold/ptb/train/train.German.gold.ptb
+device: '0'
+dist: ddp
+embed: glove-6b-100
+encoder: bert
+encoder_dropout: 0.1
+epochs: 10
+feat: null
+fix_len: 20
+implicit: false
+lr: 5.0e-05
+lr_rate: 20
+max_len: null
+mbr: false
+min_freq: 2
+mix_dropout: 0.0
+mlp_dropout: 0.33
+mode: train
+n_bert_layers: 4
+n_label_mlp: 100
+n_span_mlp: 500
+path: model
+seed: 1
+test: spmrl/test.pid
+threads: 16
+train: /home/wolfingten/projects/data/spmrl/GERMAN_SPMRL/gold/ptb/train/train.German.gold.ptb
+update_steps: 4
+wandb: false
+warmup: 0.1
+workers: 0
+
+[2024-10-28 03:12:34 INFO] Building the fields
