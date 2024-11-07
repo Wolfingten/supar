@@ -2,8 +2,11 @@ from supar import Parser
 
 parser = Parser.load("con-crf-xlmr")
 
-parser.predict(
-    "/data/users/jguertler/datasets/tut/NEWS.seg",
-    "/data/users/jguertler/datasets/tut/NEWS.pred",
+with open("/data/users/jguertler/datasets/tut/NEWS.seg", "r") as f:
+    text = f.readlines()
+
+dataset = parser.predict(
+    text,
+    pred="/data/users/jguertler/datasets/tut/NEWS.pred",
     lang="it",
 )
